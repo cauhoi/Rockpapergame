@@ -1,0 +1,41 @@
+<div class="container">
+
+
+    <br class="">
+    <h3>You <%= @game.result %>!
+<div class="btn-group">
+  <%= link_to 'New Game', new_game_path, class: 'btn btn-success' %>
+  </div>
+  </h3>
+
+    <br class="">
+    <div class="row-fluid">
+        <div class="span5 offsetHalf block">
+            <div class="pull-center">
+                 <h1 class="">YOU</h1>
+CHOOSE WISELY.
+                <br class="">
+                 <div><%= image_tag "#{@game.sign.downcase}.jpg" %></div>
+                <div><%= @game.sign %></div>
+
+            </div>
+        </div>
+        <div class="span5 block">
+            <div class="pull-center">
+                  <h1 class="">SERVER</h1>
+RANDOM THROW.
+                <br class="">
+                  <div><%= image_tag "#{@game.throw_result.downcase}.jpg"%></div>
+                  <div><%= @game.throw_result %></div>
+
+
+            </div>
+        </div>
+    </div>
+    <br class="">
+    <br class="">
+    <br class="">
+
+
+
+

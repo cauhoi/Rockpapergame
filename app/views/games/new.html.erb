@@ -1,0 +1,50 @@
+<div class="container">
+
+    <br class="">
+    <br class="">
+    <br class="">
+    <br class="">
+    <div class="row-fluid">
+        <div class="span5 offsetHalf block">
+            <div class="pull-center">
+                 <h1 class="">YOU</h1>
+CHOOSE WISELY.
+                <br class="">
+                 <h1 class=""><i class="icon-male icon-4x"></i></h1>
+                 <%= form_tag throw_game_path, method: :post, id: 'new_game' do %>
+  Choose
+  <%= select_tag :sign, options_for_select(Game::SIGNS) %>
+and
+  <div class="btn-group">
+
+  <button type="submit" class="btn btn-success">Throw</button>
+  </div>
+  <!--
+  <button type="submit" class="btn btn-primary btn-flat">THROW<i class="pull-right icon-chevron-right icon-large"></i>
+                </button>
+-->
+
+<% end %>
+
+
+            </div>
+        </div>
+        <div class="span5 block">
+            <div class="pull-center">
+                  <h1 class="">SERVER</h1>
+RANDOM THROW.
+                <br class="">
+                  <h1 class=""><i class="icon-fire icon-4x"></i></h1>
+
+
+            </div>
+        </div>
+    </div>
+    <br class="">
+    <br class="">
+    <br class="">
+
+
+  <!-- script references -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
