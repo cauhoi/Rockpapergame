@@ -2,7 +2,10 @@
 
 set :application, "rockpapergame"
 set :repo_url, "git@github.com:cauhoi/Rockpapergame.git"
-
+set :branch, :master
+set :deploy_to, '/home/deploy/rockpapergame'
+set :pty, true
+set :rvm_type, :user
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
