@@ -25,7 +25,7 @@ set :rvm_type, :user
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
-set :rvm_ruby_version, '2.1.0'
+# set :rvm_ruby_version, '2.1.0'
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", "config/secrets.yml"
 
