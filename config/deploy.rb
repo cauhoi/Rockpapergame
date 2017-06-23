@@ -27,9 +27,9 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 
 # set :passenger_restart_command, '/path-to-passenger/bin/passenger-config restart-app'
 
-# task :restart, :roles => :app do
-#     run "touch #{current_path}/tmp/restart.txt"
-# end
+task :restart, :roles => :app do
+    run "touch #{current_path}/tmp/restart.txt"
+end
 namespace :deploy do
 desc 'Restart application'
   task :restart do
