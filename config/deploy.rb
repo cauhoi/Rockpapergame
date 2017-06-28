@@ -25,7 +25,7 @@ set :rvm_type, :user
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
-# set :passenger_restart_command, 'passenger-config restart-app'
+set :passenger_restart_command, 'passenger-config restart-app'
 
 # namespace :deploy do
 # desc 'Restart application'
