@@ -176,7 +176,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass
+  bootstrap-sass (~> 3.3.4)
   capistrano
   capistrano-bundler
   capistrano-passenger (>= 0.1.1)
